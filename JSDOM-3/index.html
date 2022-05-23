@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dom Manipulation 3</title>
+</head>
+
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo esse obcaecati, consequatur officia debitis
+        doloremque nobis accusantium atque ipsa? Facilis saepe aut incidunt molestias ab a, aliquid reprehenderit nam
+        quae!</p>
+
+    <p>Saepe culpa qui ducimus pariatur quisquam voluptatem quis accusamus nulla veniam dolorum labore ullam officia
+        accusantium dicta odit ratione placeat, incidunt laborum. Modi sapiente, saepe praesentium repellat ipsam
+        architecto quis?</p>
+
+    <p>Sint delectus inventore voluptates minima, repellat totam magni beatae molestias quidem soluta aliquid? Sequi
+        impedit qui quis, incidunt repellendus saepe explicabo fugiat doloribus. Quibusdam quaerat harum vel vitae vero
+        ratione.</p>
+
+    <button type="button" id="btn">Paragrafları değiştir</button>
+
+
+
+
+
+    <script>
+
+        function clickToButton() {
+            var btn = document.getElementById("btn");
+            btn.onclick = function () {
+                var parafs = document.getElementsByTagName("p");
+                for (var i = 0; i < parafs.length; i++) {
+                    var p = parafs[i];
+                    p.innerText = "Hello JS!";
+
+                }
+            }
+        }
+        clickToButton();
+
+
+    </script>
+</body>
+
+</html>

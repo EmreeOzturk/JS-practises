@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Manipulation 1</title>
+    <script>
+        function onloaded(){
+            var p = document.getElementById("p1");
+
+            p.innerHTML="Hello JS!";
+        }
+        function clickToButton(){
+            alert('Butona Tıklandı ve Paragrafın rengi değiştirildi.');
+            var p = document.getElementById("p1");
+            p.style.color="red";
+            p.style.fontSize = "32px";
+            p.style.fontWeight = "bold";
+        }
+    </script>
+
+</head>
+
+<body onload="onloaded();">
+
+    <p id="p1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ullam voluptate numquam porro delectus.
+        Quisdeserunt quisquam aliquam nam neque.
+    </p>
+    <button onclick="clickToButton();">Click Me!</button>
+
+    <!-- <script>
+        var p = document.getElementById("p1");
+        if (p != null) {
+            p.innerHTML = "Hello JS!";
+        }
+    </script> -->
+</body>
+
+</html>

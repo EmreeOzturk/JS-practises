@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dom Manipulation 2</title>
+    <script>
+
+        function page_onload() {
+            var url = document.getElementById("txt");
+            var name = document.getElementById("name");
+            url.setAttribute("value","");
+            url.setAttribute("placeholder","URL");
+
+            name.setAttribute("value","");
+            name.setAttribute("placeholder","URL Name");
+
+        }
+
+
+        function clickToButton() {
+            var url = document.getElementById("txt");
+            var name = document.getElementById("name");
+            var listItem = document.createElement("li");
+            var anchaaor = document.createElement("a");
+            anchaaor.setAttribute("href",url.value);
+            anchaaor.innerText = name.value;
+            
+
+            listItem.appendChild(anchaaor);
+            var ul = document.getElementById("list");
+                ul.appendChild(listItem);
+        }
+
+
+
+    </script>
+</head>
+
+<body onload="page_onload();">
+    <input type="text" name="" id="txt">
+    <input type="text" name="" id="name">
+    <button onclick="clickToButton();" type="button">Add</button>
+    <hr>
+    <ul id="list">
+
+    </ul>
+</body>
+
+</html>
