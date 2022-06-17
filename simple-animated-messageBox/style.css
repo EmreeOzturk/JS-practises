@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    
+}
+li{
+    color: #fff;
+    padding: 10px;
+}
+.container{
+    position: relative;
+    width :100%;
+    padding: 20px;
+    /* height: 5vh; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(194, 127, 127);
+    color: #555;
+}
+.container h2{
+    cursor: pointer;
+}
+.container span{
+    position: absolute;
+    right: 0;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-right: 50px;
+    cursor: pointer;
+}
